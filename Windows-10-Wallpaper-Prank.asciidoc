@@ -1,0 +1,56 @@
+Changes the wallpaper on Windows 10 computers.
+
+(Runs only once)
+
+  #include "DigiKeyboard.h"
+  #define KEY_TAB  43
+  #define KEY_ESC  41
+  #define KEY_DOWN  81
+  void setup() {
+    //empty
+  }
+  void loop() {
+    DigiKeyboard.delay(500);
+    DigiKeyboard.sendKeyStroke(0);
+    DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+    DigiKeyboard.delay(400);
+    DigiKeyboard.print("chrome http://vignette3.wikia.nocookie.net/meme/images/c/c7/Fd665178b5.jpg/revision/latest cb=20160524214933");
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(4200);
+    DigiKeyboard.sendKeyStroke(KEY_S, MOD_CONTROL_LEFT);
+    DigiKeyboard.delay(500);
+    DigiKeyboard.print("qwerty");
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(1500);
+    DigiKeyboard.sendKeyStroke(KEY_ESC, MOD_CONTROL_LEFT);
+    DigiKeyboard.delay(200);
+    DigiKeyboard.print("qwerty.jpg");
+    DigiKeyboard.delay(400);
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(3000);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(50);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(50);
+    DigiKeyboard.sendKeyStroke(KEY_DOWN);
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(100);
+    DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT);
+    DigiKeyboard.delay(100);
+    DigiKeyboard.sendKeyStroke(KEY_W, MOD_CONTROL_LEFT);
+    for(;;){ /*empty*/ }
+  }
