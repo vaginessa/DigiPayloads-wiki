@@ -1,4 +1,4 @@
-Changes the wallpaper on Windows 10 computers.
+Changes the wallpaper on Windows 10 computers. You can replace the link with whatever picture you want to be the wallpaper.
 
 (Runs only once)
 
