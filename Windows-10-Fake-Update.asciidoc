@@ -1,0 +1,20 @@
+Goes to a website that displays a fake update screen and makes it fullscreen. You can adjust the delay time as needed.
+
+(Runs only once)
+
+  #include "DigiKeyboard.h"
+  void setup() {
+    //o
+  }
+  void loop() {
+    DigiKeyboard.delay(500);
+    DigiKeyboard.sendKeyStroke(0);
+    DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+    DigiKeyboard.delay(600);
+    DigiKeyboard.print("chrome http://fakeupdate.net/win10u/index.html");
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(1500);
+    DigiKeyboard.sendKeyStroke(KEY_F11);
+    for(;;){ /*empty*/ }
+  }
+
