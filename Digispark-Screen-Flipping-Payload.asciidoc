@@ -8,34 +8,34 @@ Flips the screen 180° on Windows 10
   #define KEY_ESC  41
   #define KEY_DOWN  81
   void setup() {
-  //empty
+    //empty
   }
   void loop() {
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(0);
-  DigiKeyboard.sendKeyStroke(KEY_ESC, MOD_CONTROL_LEFT);
-  DigiKeyboard.delay(300);
-  DigiKeyboard.print("display settings");
-  DigiKeyboard.delay(300);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(1500);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(50);
-  DigiKeyboard.sendKeyStroke(KEY_DOWN);
-  DigiKeyboard.sendKeyStroke(KEY_DOWN);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(50);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(500);
-  DigiKeyboard.sendKeyStroke(KEY_TAB);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(70);
-  DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT);
-  for(;;){ /*empty*/ }
+    DigiKeyboard.delay(500);
+    DigiKeyboard.sendKeyStroke(0);
+    DigiKeyboard.sendKeyStroke(KEY_ESC, MOD_CONTROL_LEFT);
+    DigiKeyboard.delay(300);
+    DigiKeyboard.print("display settings");
+    DigiKeyboard.delay(300);
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(1500);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(50);
+    DigiKeyboard.sendKeyStroke(KEY_DOWN);
+    DigiKeyboard.sendKeyStroke(KEY_DOWN);
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(50);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(500);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(70);
+    DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT);
+    for(;;){ /*empty*/ }
   }
