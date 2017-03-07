@@ -1,4 +1,4 @@
-Welcome to the DigiPayloads wiki!
+Welcome to DigiPayloads
 
 Copy and paste different Payloads for the Digispark!
 
