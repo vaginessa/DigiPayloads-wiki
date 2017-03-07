@@ -4,7 +4,7 @@ Goes to a website that displays a fake update screen and makes it fullscreen. Yo
 
   #include "DigiKeyboard.h"
   void setup() {
-    //o
+    //empty
   }
   void loop() {
     DigiKeyboard.delay(500);
