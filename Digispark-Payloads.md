@@ -10,3 +10,5 @@ Copy and paste different Payloads for the Digispark!
 [Windows 10 Fake Update](https://github.com/WifiLANDucky/DigiPayloads/wiki/Windows-10-Fake-Update)
 
 [Windows Shutdown](https://github.com/WifiLANDucky/DigiPayloads/wiki/Windows-Shutdown)
+
+[Infinite CMD](https://github.com/WifiLANDucky/DigiPayloads/wiki/Infinite-CMD)
