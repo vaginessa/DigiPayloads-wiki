@@ -9,3 +9,5 @@
 [Windows Shutdown](https://github.com/WifiLANDucky/DigiPayloads/wiki/Windows-Shutdown)
 
 [Infinite CMD](https://github.com/WifiLANDucky/DigiPayloads/wiki/Infinite-CMD)
+
+[Reverse Shell](https://github.com/WifiLANDucky/DigiPayloads/wiki/Windows-Reverse-Shell)
