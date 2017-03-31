@@ -1,5 +1,5 @@
 A script to reverse shell a windows machine.
-9
+
 Replace LINK with a direct download link, IP with your listening IP, and PORT with a port of your choice (ex. 25565).
 
 (Runs only once)
