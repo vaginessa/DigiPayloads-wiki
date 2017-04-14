@@ -11,3 +11,5 @@
 [Infinite CMD](https://github.com/WifiLANDucky/DigiPayloads/wiki/Infinite-CMD)
 
 [Reverse Shell](https://github.com/WifiLANDucky/DigiPayloads/wiki/Windows-Reverse-Shell)
+
+[Windows Startup Shutdown](https://github.com/WifiLANDucky/DigiPayloads/wiki/Windows-Startup-Shutdown)
