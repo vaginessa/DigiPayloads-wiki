@@ -8,8 +8,6 @@
 
 [Windows Shutdown](https://github.com/WifiLANDucky/DigiPayloads/wiki/Windows-Shutdown)
 
-[Infinite CMD](https://github.com/WifiLANDucky/DigiPayloads/wiki/Infinite-CMD)
-
 [Windows Reverse Shell](https://github.com/WifiLANDucky/DigiPayloads/wiki/Windows-Reverse-Shell)
 
 [Windows Startup Shutdown](https://github.com/WifiLANDucky/DigiPayloads/wiki/Windows-Startup-Shutdown)
