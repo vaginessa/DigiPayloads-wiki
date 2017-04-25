@@ -15,3 +15,5 @@
 [Windows Startup Shutdown](https://github.com/WifiLANDucky/DigiPayloads/wiki/Windows-Startup-Shutdown)
 
 [Windows IP Snatcher](https://github.com/WifiLANDucky/DigiPayloads/wiki/IP-Snatcher)
+
+[Mouse Disabler](https://github.com/WifiLANDucky/DigiPayloads/wiki/Mouse-Disabler/)
