@@ -1,0 +1,13 @@
+Works on most operating systems. This payload moves the mouse to the top right corner and keeps it there until it is unplugged.
+
+(Runs repeatedly)
+
+  #include <DigiMouse.h>
+  void setup() {
+    DigiMouse.begin();
+  }
+  void loop() {
+    DigiMouse.moveY(-50);
+    DigiMouse.moveX(50);
+    DigiMouse.delay(1);
+  }
