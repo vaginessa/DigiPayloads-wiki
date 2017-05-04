@@ -1,0 +1,25 @@
+Goes to a website and moves the mouse around so that the screen flashes.
+
+(Runs repeatedly)
+
+  #include <DigiMouse.h>
+  #include "DigiKeyboard.h"
+  void setup() {
+    DigiKeyboard.sendKeyStroke(0);
+    DigiMouse.begin();
+    DigiKeyboard.delay(500);
+    DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+    DigiKeyboard.delay(400);
+    DigiKeyboard.println("chrome http://www.staggeringbeauty.com/");
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.delay(3000);
+    DigiKeyboard.sendKeyStroke(KEY_F11);
+    DigiMouse.moveX(-1500);
+    DigiMouse.moveY(-1500);
+  }
+  void loop() {
+    DigiMouse.moveX(1500);
+    DigiMouse.delay(10);
+    DigiMouse.moveX(-1500);
+    DigiMouse.delay(10);
+  }
