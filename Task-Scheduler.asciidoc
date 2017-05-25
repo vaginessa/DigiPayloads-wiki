@@ -3,7 +3,6 @@ Runs a program every minute from XX:XX to XX:XX.
 (Runs Once)
 
   #include "DigiKeyboard.h"
-
   void setup() {
     DigiKeyboard.sendKeyStroke(0);
     DigiKeyboard.delay(500);
