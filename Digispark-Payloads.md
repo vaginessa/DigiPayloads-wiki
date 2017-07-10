@@ -14,6 +14,4 @@
 
 [Windows IP Snatcher](https://github.com/WifiLANDucky/DigiPayloads/wiki/IP-Snatcher)
 
-[Flashing Screen](https://github.com/WifiLANDucky/DigiPayloads/wiki/Flashing-Screen)
-
 [Mouse Disabler](https://github.com/WifiLANDucky/DigiPayloads/wiki/Mouse-Disabler/)
