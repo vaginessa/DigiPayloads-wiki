@@ -10,6 +10,8 @@
 
 [Windows Reverse Shell](https://github.com/WifiLANDucky/DigiPayloads/wiki/Windows-Reverse-Shell)
 
+[Windows Reverse Shell With Persistence}(https://github.com/WifiLANDucky/DigiPayloads/wiki/Windows-Persistence-Reverse-Shell)
+
 [Windows Startup Shutdown](https://github.com/WifiLANDucky/DigiPayloads/wiki/Windows-Startup-Shutdown)
 
 [Windows IP Snatcher](https://github.com/WifiLANDucky/DigiPayloads/wiki/IP-Snatcher)
